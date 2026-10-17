@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking | Tourism Website</title>
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zA_yFExuYFUkY0PPjOB2xXJ56_y3CflqjJsXMlQ5Cg&s=10" />
+</head>
+<body>
+
+    <h1>Explore Tourism</h1>
+
+    <section id="hotel-list">
+      <h2>Our Hotels</h2>
+
+      <article>
+        <img src="https://www.hilton.com/im/en/SHAWSCI/27654241/yu-garden-2.jpg?impolicy=crop&cw=6336&ch=6336&gravity=NorthWest&xposition=0&yposition=1584&rh=2880&rw=2880" alt="Sea view of Ocean Breeze Resort" width="300" height="200">
+        <h3>Ocean Breeze Resort</h3>
+        <p>Cox's Bazar - Beachfront resort with sea-view rooms.</p>
+        <ul>
+          <li>Free Wi-Fi</li>
+          <li>Swimming pool</li>
+          <li>Breakfast included</li>
+        </ul>
+      </article>
+
+      <article>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWz2pEe9oNcShuyg0hT-5D4hHisEixBQZlEJoDGByhh7ede9xyOSDzxA&s=10" alt="Front entrance of Green Hill Lodge" width="300" height="200">
+        <h3>Green Hill Lodge</h3>
+        <p>Sylhet - Quiet lodge surrounded by tea gardens.</p>
+        <ul>
+          <li>Free Wi-Fi</li>
+          <li>Parking</li>
+          <li>Garden restaurant</li>
+        </ul>
+      </article>
+
+      <article>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvYB3II0sODSF0b90FKuSiBSZ6TbtZWG3etzvLqyuX_e-7sUJkHRT3Qs&s=10" alt="Lobby of City Central Hotel" width="300" height="200">
+        <h3>City Central Hotel</h3>
+        <p>Dhaka - Business hotel close to the airport and city centre.</p>
+        <ul>
+          <li>Free Wi-Fi</li>
+          <li>Gym</li>
+          <li>24-hour reception</li>
+        </ul>
+      </article>
+
+
+      <table border="1">
+        <caption>Room types and prices (per night)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Room type</th>
+            <th scope="col">Beds</th>
+            <th scope="col">Max guests</th>
+            <th scope="col">Price (BDT)</th>
+            <th scope="col">Facilities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard</td>
+            <td>1 double</td>
+            <td>2</td>
+            <td>3,000</td>
+            <td>Wi-Fi, fan, TV</td>
+          </tr>
+          <tr>
+            <td>Deluxe</td>
+            <td>1 king</td>
+            <td>3</td>
+            <td>5,500</td>
+            <td>Wi-Fi, AC, TV, balcony</td>
+          </tr>
+          <tr>
+            <td>Family suite</td>
+            <td>2 double</td>
+            <td>5</td>
+            <td>9,000</td>
+            <td>Wi-Fi, AC, TV, living area</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    
+    <section id="booking">
+      <h2>Book Your Stay</h2>
+
+      <form action="" method="get">
+
+           <p>
+            <label for="full_name">Full name *</label><br>
+            <input type="text" id="full_name" name="full_name"placeholder="e.g. name" >
+          </p>
+
+          <p>
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email"placeholder="name@example.com"required>
+          </p>
+
+          <p>
+            <label for="phone">Phone number *</label><br>
+            <input type="tel" id="phone" name="phone"placeholder="01XXXXXXXXX" required>
+          </p>
+          
+          <p>
+            <label for="hotel">Hotel *</label><br>
+            <select id="hotel" name="hotel" required>
+              <option value="">-- Select hotel --</option>
+              <option value="ocean-breeze">Ocean Breeze Resort</option>
+              <option value="green-hill">Green Hill Lodge</option>
+              <option value="city-central">City Central Hotel</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="room_type">Room type *</label><br>
+            <select id="room_type" name="room_type" required>
+              <option value="">-- Select room --</option>
+              <option value="standard">Standard - 3,000 BDT</option>
+              <option value="deluxe">Deluxe - 5,500 BDT</option>
+              <option value="family">Family suite - 9,000 BDT</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="checkin">Check-in date *</label><br>
+            <input type="date" id="checkin" name="checkin">
+          </p>
+
+          <p>
+            <label for="checkout">Check-out date *</label><br>
+            <input type="date" id="checkout" name="checkout">
+          </p>
+
+          <p>
+            <label for="adults">Adults *</label><br>
+            <input type="number" id="adults" name="adults">
+          </p>
+
+          <p>
+            <label for="children">Children</label><br>
+            <input type="number" id="children" name="children">
+          </p>
+
+          <p>
+            <input type="radio" id="pay_cash" name="payment" value="cash" required>
+            <label for="pay_cash">Pay at hotel</label>
+          </p>
+          <p>
+            <input type="radio" id="pay_card" name="payment" value="card">
+            <label for="pay_card">Credit / debit card</label>
+          </p>
+          <p>
+            <input type="radio" id="pay_mobile" name="payment" value="mobile">
+            <label for="pay_mobile">Mobile banking (bKash / Nagad)</label>
+          </p>
+        </fieldset>
+
+          <p>
+            <label for="requests">Special requests</label><br>
+            <textarea id="requests" name="requests" rows="4" cols="40" maxlength="300"placeholder="Late check-in, extra bed, dietary needs..."></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="terms" name="terms" value="yes" required>
+            <label for="terms">I agree to the booking terms and cancellation policy *</label>
+          </p>
+
+        <p>
+          <button type="submit">Confirm booking</button>
+          <button type="reset">Clear form</button>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>
